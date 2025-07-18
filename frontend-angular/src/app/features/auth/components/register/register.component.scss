@@ -1,0 +1,122 @@
+.register-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.register-card {
+  width: 100%;
+  max-width: 500px;
+  padding: 0;
+  border-radius: 16px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+}
+
+.register-card mat-card-header {
+  text-align: center;
+  padding: 32px 32px 16px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border-radius: 16px 16px 0 0;
+}
+
+.register-card mat-card-title {
+  font-size: 28px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.register-card mat-card-subtitle {
+  font-size: 16px;
+  opacity: 0.9;
+  margin: 8px 0 0;
+}
+
+.register-card mat-card-content {
+  padding: 32px;
+}
+
+.name-row {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 8px;
+}
+
+.half-width {
+  flex: 1;
+}
+
+.full-width {
+  width: 100%;
+  margin-bottom: 16px;
+}
+
+.form-actions {
+  margin-top: 24px;
+  text-align: center;
+}
+
+.register-button {
+  width: 100%;
+  height: 48px;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 8px;
+  position: relative;
+  
+  mat-spinner {
+    margin-right: 8px;
+  }
+}
+
+.login-link {
+  text-align: center;
+  margin-top: 24px;
+  padding-top: 24px;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  
+  p {
+    margin: 0;
+    color: rgba(0, 0, 0, 0.6);
+    font-size: 14px;
+  }
+  
+  a {
+    font-weight: 600;
+    text-decoration: none;
+  }
+}
+
+// Responsive design
+@media (max-width: 600px) {
+  .register-container {
+    padding: 10px;
+  }
+  
+  .name-row {
+    flex-direction: column;
+    gap: 0;
+  }
+  
+  .register-card mat-card-content {
+    padding: 24px 20px;
+  }
+  
+  .register-card mat-card-header {
+    padding: 24px 20px 16px;
+  }
+}
+
+// Error styling
+::ng-deep .error-snackbar {
+  background-color: #f44336 !important;
+  color: white !important;
+}
+
+::ng-deep .success-snackbar {
+  background-color: #4caf50 !important;
+  color: white !important;
+}

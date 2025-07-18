@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "@angular/flex-layout": "^15.0.0-beta.42",
+    "@angular/material": "^19.1.4",
+    "@angular/router": "^19.1.6",
+    "@auth0/angular-jwt": "^5.2.0"
+  }
+}

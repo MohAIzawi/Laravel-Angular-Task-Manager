@@ -1,0 +1,59 @@
+# Dependencies
+node_modules/
+vendor/
+
+# Laravel specific
+/Backend-Laravel/storage/*.key
+/Backend-Laravel/storage/app/public
+/Backend-Laravel/storage/framework/cache/*
+/Backend-Laravel/storage/framework/sessions/*
+/Backend-Laravel/storage/framework/testing/*
+/Backend-Laravel/storage/framework/views/*
+/Backend-Laravel/storage/logs/*
+/Backend-Laravel/.env
+/Backend-Laravel/.env.backup
+/Backend-Laravel/.env.production
+/Backend-Laravel/Homestead.json
+/Backend-Laravel/Homestead.yaml
+/Backend-Laravel/auth.json
+/Backend-Laravel/npm-debug.log
+/Backend-Laravel/yarn-error.log
+/Backend-Laravel/database/database.sqlite
+
+# Angular specific
+/frontend-angular/dist/
+/frontend-angular/tmp/
+/frontend-angular/out-tsc/
+/frontend-angular/.angular/
+/frontend-angular/.angular/cache/
+/frontend-angular/node_modules/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Database
+*.sqlite
+*.sqlite3
+database.sqlite
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Cache files
+*.cache
+.cache/
+
+# Build outputs
+build/
+dist/
+out/

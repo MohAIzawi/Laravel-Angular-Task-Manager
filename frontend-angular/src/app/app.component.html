@@ -1,0 +1,21 @@
+<mat-toolbar color="primary" *ngIf="isAuthenticated$ | async">
+    <span>Task Manager</span>
+    <span class="toolbar-spacer"></span>
+    <button mat-icon-button [matMenuTriggerFor]="menu">
+      <mat-icon>more_vert</mat-icon>
+    </button>
+    <mat-menu #menu="matMenu">
+      <button mat-menu-item routerLink="/tasks">
+        <mat-icon>list</mat-icon>
+        <span>Tasks</span>
+      </button>
+      <button mat-menu-item (click)="logout()">
+        <mat-icon>logout</mat-icon>
+        <span>Logout</span>
+      </button>
+    </mat-menu>
+  </mat-toolbar>
+  
+  <div class="content-container">
+    <router-outlet></router-outlet>
+  </div>
